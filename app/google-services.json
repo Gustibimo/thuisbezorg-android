@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "555479955917",
+    "firebase_url": "https://takeaways-4898b.firebaseio.com",
+    "project_id": "takeaways-4898b",
+    "storage_bucket": "takeaways-4898b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555479955917:android:44207ec3d334f8c0",
+        "android_client_info": {
+          "package_name": "com.marlaw.takeaways"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo3ug2UHsTfmIGXGmWlLfD5ZLkfPY9Ok0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555479955917-9sjcphhpgt43qqkk1nnjjgdhqnb0483n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
