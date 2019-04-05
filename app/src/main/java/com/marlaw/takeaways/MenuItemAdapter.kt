@@ -28,7 +28,8 @@ class MenuItemAdapter(private val recordContext: Context) : BaseAdapter() {
             val theView = recordInflator.inflate(R.layout.menuitem, null)
             val newMenuItemViewHolder = MenuItemViewHolder(
                 theView.findViewById(R.id.item_name),
-                theView.findViewById(R.id.item_count)
+                theView.findViewById(R.id.item_count),
+                theView.findViewById(R.id.item_price)
             )
             val countAdapter = ArrayAdapter(
                 recordContext,
@@ -48,6 +49,7 @@ class MenuItemAdapter(private val recordContext: Context) : BaseAdapter() {
         val menuItem = getItem(i)
         menuItemViewHolder.name.text = menuItem.name
         menuItemViewHolder.id = menuItem.id
+        menuItemViewHolder.price.text = menuItem.price
 
         menuItemViewHolder.count.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -70,7 +72,8 @@ class MenuItemAdapter(private val recordContext: Context) : BaseAdapter() {
 
 data class MenuItemViewHolder(
     val name: TextView,
-    val count: Spinner
+    val count: Spinner,
+    val price: TextView
 ) {
     var id: String? = null
 }
